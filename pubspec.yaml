@@ -19,10 +19,10 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 
 #android
-version: 1.0.5+8
+#version: 1.0.6+10
 
 #ios
-#version: 1.0.0+2
+version: 1.0.1+3
 
 environment:
   sdk: ^3.7.0
@@ -33,13 +33,14 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+
 dependencies:
   flutter:
     sdk: flutter
 
 
 
-  file_picker: ^10.3.7
+  file_picker: ^10.3.8
   share_plus: ^12.0.1
   flutter_launcher_icons: ^0.14.4
   url_launcher: ^6.3.2
@@ -51,11 +52,13 @@ dependencies:
   in_app_review: ^2.0.11
   package_info_plus: ^9.0.0
   permission_handler: ^12.0.1
-  pdfrx: ^2.2.14
-  google_mobile_ads: ^6.0.0
+  pdfrx: ^2.2.18
+  google_mobile_ads: ^7.0.0
   sqflite: ^2.4.2
   intl: ^0.20.2
   device_info_plus: ^12.3.0
+  purchases_flutter: ^9.10.2
+
 
 
 
@@ -71,12 +74,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

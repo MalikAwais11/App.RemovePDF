@@ -17,6 +17,7 @@ import '../../../viewModel/themeController.dart';
 import '../../components/settingSheet.dart';
 import '../../components/themeButton.dart';
 import '../../generated/assets.dart';
+import '../subscriptionScreen/subscriptionScreen.dart';
 
 
 class mainScreen extends StatefulWidget {
@@ -53,26 +54,26 @@ class _mainScreenState extends State<mainScreen> {
 
 
 
-          SizedBox(width: 3.w,),
+          InkWell(
+              onTap: ()=>  Get.to(()=> subscriptionScreen()),
+              child: Image.asset(Assets.imagesCrown, width: 24.sp,)
+          ),
 
+
+          SizedBox(width: 3.5.w,),
 
 
           Container(
-            // color: Colors.red,
             child: InkWell(
-
               onTap: (){
                 Get.to(()=> settingSheet());
               },
-
               child: Obx(()=>ImageIcon(AssetImage(Assets.imagesSetting,), color:   themeCon.isLightTheme.value? AppColors.lightTextColor : AppColors.darkTextColor, size: 22.sp,),),
 
 
             ),
           ),
-
           SizedBox(width: 3.w,),
-
 
         ],
 
@@ -101,6 +102,10 @@ class _mainScreenState extends State<mainScreen> {
                             onTap: ()=> con.checkPermission(AppTools.deletePages, context),
                             child: Card(
                               margin: EdgeInsets.zero,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(16.sp),
+
+                              ),
                               child: Container(
                                 height: 13.h,
                                 width: Device.width,

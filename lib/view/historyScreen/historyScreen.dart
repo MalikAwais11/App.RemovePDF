@@ -84,10 +84,13 @@ class _historyScreenState extends State<historyScreen> {
                       background: Padding(
                         padding: const EdgeInsets.all(8),
                         child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(17.sp),
+                          ),
                           margin: EdgeInsets.zero,
                           child: Container(
                               alignment: Alignment.center,
-                              height: 10.h,
+                              height: 8.h,
                               padding:  EdgeInsets.only(left: 12.sp, right: 5.sp,),
 
                               decoration: BoxDecoration(
@@ -137,15 +140,18 @@ class _historyScreenState extends State<historyScreen> {
                         child: Padding(
                           padding:  EdgeInsets.only(top: 12.sp),
                           child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(13.sp),
+                            ),
                             margin: EdgeInsets.zero,
                             child: Container(
                               // color: AppColors.themeColor,
                               alignment: Alignment.topLeft,
-                              height: 10.h,
+                              height: 7.5.h,
                               padding:  EdgeInsets.only(left: 12.sp, right: 5.sp,),
 
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(17.sp),
+                                  borderRadius: BorderRadius.circular(13.sp),
                                   color: themeCon.isLightTheme.value? AppColors.lightCardColor : AppColors.darkCardColor
                               ),
                               // padding: EdgeInsets.only(left:device.setPadding(5),right:device.setPadding(2),top:device.setPadding(2),bottom:device.setPadding(2),),
@@ -153,9 +159,17 @@ class _historyScreenState extends State<historyScreen> {
                                 children: [
 
 
-                                  SizedBox(width:1.w,),
-                                  Image.asset(Assets.imagesPDF, width: 10.w,),
-                                  SizedBox(width:5.w,),
+                                  SizedBox(width:0.5.w,),
+                                  Image.asset(Assets.imagesPDF, width: 8.w,),
+                                  SizedBox(width:2.w,),
+                                  Container(
+                                    width: 5.sp, height: 5.h,
+                                    decoration: BoxDecoration(
+                                      color: AppColors.themeColor,
+                                      borderRadius: BorderRadius.circular(15.sp)
+                                    ),
+                                  ),
+                                  SizedBox(width:2.w,),
                                   Expanded(
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
@@ -176,11 +190,12 @@ class _historyScreenState extends State<historyScreen> {
                                             "File Size: ".tr+con.items[i].fileSize.toString(),
 
                                             style: TextStyle(
-                                                fontSize: 14.sp,
+                                                fontSize: 14.5.sp,
                                                 fontWeight: FontWeight.w700,
                                                 color: AppColors.themeColor
 
                                               // color: themeCon.isLightTheme.value? AppColors.lightTextColor : AppColors.darkTextColor
+
                                             ),
                                           ),
                                         ],

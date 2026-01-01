@@ -26,15 +26,17 @@ class _optionTileState extends State<optionTile> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.only(bottom: 18.sp),
+      padding:  EdgeInsets.only(bottom: 1.5.h),
       child: InkWell(
         onTap: widget.tap,
         child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16.sp),
+          ),
           margin: EdgeInsets.zero,
           child: Container(
-            // color: AppColors.themeColor,
             alignment: Alignment.centerLeft,
-            height: 8.h,
+            height: 7.5.h,
             padding:  EdgeInsets.only(left: 5.w, right: 13.sp,),
 
             decoration: BoxDecoration(

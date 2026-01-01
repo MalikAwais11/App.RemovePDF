@@ -15,6 +15,9 @@ class AppUrls{
 
   static const dBPenalUrl = 'https://codifyapis.factsinsight.net/api/db-link';
 
+  static const androidSManageSubscription = "https://play.google.com/store/account/subscriptions";
+  static const iosSManageSubscription = "https://apps.apple.com/account/subscriptions";
+
 
   static const dbName = 'Delete PDF Pages';
   static const token = 'eyJpdiI6IkVUMjVFYi9kK0NCUHFIT0VCck00YUE9PSIsInZhbHVlIjoiZ2tOZW94aEswdTlaelgxbHJHZk9NZz09IiwibWFjIjoiZjkyMjE4ZDRhMDE2ZmI2MjlkOTk5ZDIxYTFiZDY1NWVjMzg0ODliYzkzNmI1YWNhMDU3MDZjNGQyNjRkZWQyZCIsInRhZyI6IiJ9';

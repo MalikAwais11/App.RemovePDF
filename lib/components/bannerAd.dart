@@ -24,7 +24,7 @@ class _bannerAdState extends State<bannerAd> {
 
     _bannerAd = BannerAd(
 
-      adUnitId: Platform.isIOS? AppIds.bannerID : AppIds.iosBannerID,
+      adUnitId: Platform.isIOS? AppIds.iosBannerID : AppIds.bannerID,
       request: const AdRequest(),
       size: AdSize.fullBanner,
 
@@ -45,7 +45,7 @@ class _bannerAdState extends State<bannerAd> {
 
   @override
   void initState() {
-    con.isAdsBlocked.value? null : loadAd();
+    con.isPro.value? print("pro version: banner not load") : (con.isAdsBlocked.value? null : loadAd());
     super.initState();
   }
 
@@ -53,14 +53,18 @@ class _bannerAdState extends State<bannerAd> {
   @override
   Widget build(BuildContext context) {
 
-    return  Obx(()=>   con.isAdsBlocked.value? SizedBox() : Align(
-        alignment: Alignment.bottomCenter,
-        child: _isLoaded? SizedBox(
-          width: _bannerAd!.size.width.toDouble(),
-          height: _bannerAd!.size.height.toDouble(),
-          child: AdWidget(ad: _bannerAd!),
-        ) : SizedBox()
-    ));
+    return  Obx(()=>  con.isPro.value? SizedBox.shrink() : (con.isAdsBlocked.value? SizedBox() : Container(
+      child: Align(
+          alignment: Alignment.bottomCenter,
+          child: _isLoaded? SizedBox(
+            width: _bannerAd!.size.width.toDouble(),
+            height: _bannerAd!.size.height.toDouble(),
+            child: AdWidget(ad: _bannerAd!),
+          ) : SizedBox()
+      ),
+
+    )));
+
 
 
   }

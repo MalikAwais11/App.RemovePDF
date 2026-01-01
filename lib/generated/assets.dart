@@ -8,6 +8,7 @@ class Assets {
   static const String fontsUrbanistMedium = 'assets/fonts/Urbanist-Medium.ttf';
   static const String fontsUrbanistRegular = 'assets/fonts/Urbanist-Regular.ttf';
   static const String fontsUrbanistSemiBold = 'assets/fonts/Urbanist-SemiBold.ttf';
+  static const String imagesCrown = 'assets/images/crown.png';
   static const String imagesDeleteLogo = 'assets/images/deleteLogo.png';
   static const String imagesDeleteSplash = 'assets/images/deleteSplash.png';
   static const String imagesLightMainCard = 'assets/images/lightMainCard.png';

@@ -48,8 +48,8 @@ class _chooseTypeScreenState extends State<chooseTypeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              SizedBox(height: 2.h,),
 
+              SizedBox(height: 1.h,),
 
               optionTile(
                 title: "Select & Preview Pages",
@@ -92,6 +92,20 @@ class _chooseTypeScreenState extends State<chooseTypeScreen> {
                 },
               ),
 
+              // SizedBox(height: 1.h,),
+              //
+              // Text( "➜ More Tools",
+              //   maxLines: 1,
+              //   overflow: TextOverflow.ellipsis,
+              //   style: TextStyle(
+              //       fontSize: 14.sp,
+              //       fontWeight: FontWeight.w700,
+              //       color: AppColors.lightTextColor
+              //   ),
+              // ),
+              //
+              //
+              // SizedBox(height: 1.h,),
 
               SizedBox(height: 1.5.h,),
 

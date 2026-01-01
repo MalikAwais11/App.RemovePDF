@@ -49,6 +49,7 @@ class _deletePagesState extends State<deletePages> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Remove Pages"),),
+
       body: Padding(
         padding: EdgeInsets.all(12.sp),
         child: Column(
@@ -155,21 +156,15 @@ class _deletePagesState extends State<deletePages> {
 
                     onTap: (){
 
-
-
-
                       if(con.selectedPages.any((e) => e == i+1)){
                         con.selectedPages.remove(i+1);
-                        debugPrint("removed ${i+1}");
-
+                        // debugPrint("removed ${i+1}");
                       }
 
                       else{
 
                         con.selectedPages.add(i+1);
-
                         // debugPrint("add  ${i+1}");
-
                       }
 
                       con.selectedPages.refresh();

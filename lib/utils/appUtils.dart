@@ -16,6 +16,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../res/appColors/appColors.dart';
+import '../res/appStrings/appStrings.dart';
 import '../res/appStrings/appTools.dart';
 import '../res/appUrls/appUrls.dart';
 import '../source/local/DataBase_Helper.dart';
@@ -23,6 +24,18 @@ import '../view/previewScreens/toolPagePreviewScreen.dart';
 
 
 class AppUtils{
+
+
+  static copyText(text){
+    Clipboard.setData(ClipboardData(text: text)).then((_){
+      AppUtils.showMsg("Text Copied!".tr, "Text copied to clipboard".tr);
+    });
+
+
+  }
+
+
+  static manageSubscription()=> launchUrl(Uri.parse( Platform.isIOS? AppUrls.iosSManageSubscription : AppUrls.androidSManageSubscription), mode: LaunchMode.externalApplication);
 
 
 

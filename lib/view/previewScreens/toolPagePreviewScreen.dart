@@ -82,9 +82,6 @@ class _toolPagePreviewScreenState extends State<toolPagePreviewScreen> {
                   children: [
                     SizedBox(height: 0.h,),
 
-
-
-
                     Container(
 
                       width: Device.width/1.5,
@@ -118,10 +115,7 @@ class _toolPagePreviewScreenState extends State<toolPagePreviewScreen> {
                       )
                     ),
 
-
-
                     SizedBox(height: 2.h,),
-
 
                     Padding(
                       padding:  EdgeInsets.only(left: 14.sp, right: 14.sp),
@@ -140,7 +134,6 @@ class _toolPagePreviewScreenState extends State<toolPagePreviewScreen> {
 
                     SizedBox(height: 1.h,),
 
-
                     Text("File Size: ${AppUtils.convertFileSize(bytes: widget.file.lengthSync())} ",
 
                       style: TextStyle(
@@ -151,9 +144,7 @@ class _toolPagePreviewScreenState extends State<toolPagePreviewScreen> {
                     ),
 
 
-
                     SizedBox(height: 4.h,),
-
 
 
                     Row(

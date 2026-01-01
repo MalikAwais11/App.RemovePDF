@@ -14,4 +14,10 @@ class AppIds{
 
 
 
+  static const revenueCatAndroidId = "goog_ZybQJWuuKSPYrEUufHvixWpLZdB";
+  static const revenueCatIOSId = "appl_OIgUGZLnbltPJqeXdsbGiCTpLQn";
+  static const entitlementID = "Delete PDF Pages";
+
+
+
 }
